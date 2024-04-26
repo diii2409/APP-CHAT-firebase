@@ -41,7 +41,7 @@ export default function EditInfoRoomModal() {
 					name,
 					description,
 					avatar: "default",
-					members: [uid],
+					members: selectedRoom.members,
 					keywords: generateKeywords(name.toLowerCase()),
 				});
 			} else {
@@ -60,7 +60,7 @@ export default function EditInfoRoomModal() {
 							description,
 							avatar: val,
 							avatarId,
-							members: [uid],
+							members: selectedRoom.members,
 							keywords: generateKeywords(name.toLowerCase()),
 						});
 					});
